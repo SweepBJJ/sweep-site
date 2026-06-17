@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0F1F40" />
+  <title>FAQ &amp; Support · Sweep</title>
+  <meta name="description" content="Answers about Sweep: what's free vs Pro, the one-time price, where your data lives, backups, refunds, gi and no-gi, and how to get help." />
+  <link rel="canonical" href="https://sweepbjj.app/support.html" />
+  <link rel="icon" type="image/png" href="assets/icon-180.png" />
+  <link rel="apple-touch-icon" href="assets/icon-180.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --navy:#0F1F40;--card:#131C2C;--line:rgba(232,234,237,.10);--line-2:rgba(232,234,237,.06);
+      --amber:#E8A857;--ink-on-amber:#1A0F00;--text:#EAECF0;--text-2:#A6AEC0;--text-3:#7E889C;--good:#62BC92;
+      --maxw:780px;--ease:cubic-bezier(.22,.61,.36,1);
+      --font-display:'Newsreader',Georgia,serif;--font-body:'Sora',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--font-body);background:var(--navy);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+    body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(900px 600px at 80% -10%,rgba(232,168,87,.12),transparent 60%),radial-gradient(800px 700px at 5% 10%,rgba(36,48,189,.10),transparent 55%),linear-gradient(180deg,#0C1A37,var(--navy) 40%,#0C1832)}
+    a{color:var(--amber)}
+    img{display:block;max-width:100%}
+    .nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:15px clamp(20px,4vw,40px);background:rgba(11,22,46,.75);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);border-bottom:1px solid var(--line-2)}
+    .nav-brand{display:flex;align-items:center;gap:11px}
+    .nav-brand img{height:28px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.35))}
+    .nav-links{display:flex;align-items:center;gap:6px}
+    .nav-links a{color:var(--text-2);font-size:14.5px;font-weight:500;padding:8px 13px;border-radius:10px;text-decoration:none;transition:color .25s,background .25s}
+    .nav-links a:hover{color:var(--text);background:rgba(255,255,255,.05)}
+    .article{max-width:var(--maxw);margin:0 auto;padding:72px clamp(22px,5vw,32px) 40px}
+    .article h1{font-family:var(--font-display);font-weight:600;font-size:clamp(36px,6vw,56px);letter-spacing:-.02em;line-height:1.02;margin-bottom:14px}
+    .meta{color:var(--text-3);font-size:14px;margin-bottom:30px}
+    .intro{font-size:18.5px;color:var(--text-2);line-height:1.6;padding:22px 24px;border-left:2px solid var(--amber);background:rgba(232,168,87,.05);border-radius:0 14px 14px 0;margin-bottom:30px}
+    .contact-card{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:22px 24px;background:var(--card);border:1px solid var(--line);border-radius:18px;margin-bottom:18px}
+    .contact-card .em{font-family:var(--font-display);font-size:20px;color:var(--text)}
+    .contact-card a.mail{display:inline-flex;align-items:center;gap:9px;background:var(--amber);color:var(--ink-on-amber);text-decoration:none;font-weight:600;padding:11px 18px;border-radius:12px;transition:transform .25s var(--ease)}
+    .contact-card a.mail:hover{transform:translateY(-1px)}
+    .contact-card p{color:var(--text-2);font-size:14px;flex:1;min-width:200px}
+    h2.sec{font-family:var(--font-display);font-weight:600;font-size:26px;margin:44px 0 8px;letter-spacing:-.01em}
+    details{border-bottom:1px solid var(--line-2);padding:4px 0}
+    details summary{list-style:none;cursor:pointer;padding:18px 40px 18px 2px;position:relative;font-weight:600;font-size:17px;color:var(--text);transition:color .25s}
+    details summary::-webkit-details-marker{display:none}
+    details summary:hover{color:var(--amber)}
+    details summary::after{content:"";position:absolute;right:6px;top:50%;width:9px;height:9px;border-right:2px solid var(--amber);border-bottom:2px solid var(--amber);transform:translateY(-65%) rotate(45deg);transition:transform .3s var(--ease)}
+    details[open] summary::after{transform:translateY(-35%) rotate(225deg)}
+    details .ans{padding:0 6px 20px 2px;color:var(--text-2);font-size:15.5px;line-height:1.7;animation:fade .4s var(--ease)}
+    @keyframes fade{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+    details .ans strong{color:var(--text);font-weight:600}
+    details .ans .tag{color:var(--amber);font-weight:700}
+    .callout{margin-top:46px;padding:26px 28px;border:1px solid rgba(232,168,87,.22);background:rgba(232,168,87,.05);border-radius:18px;color:var(--text-2);font-size:15.5px;line-height:1.65}
+    .callout strong{color:var(--text);font-weight:600}
+    footer{border-top:1px solid var(--line-2);padding:40px 28px;background:rgba(8,17,35,.5);margin-top:60px}
+    .foot-bottom{max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--text-3);align-items:center}
+    .foot-bottom .tagline{font-family:var(--font-display);font-style:italic;color:var(--text-2)}
+    .foot-bottom a{color:var(--text-2);text-decoration:none;margin-left:18px}
+    .foot-bottom a:hover{color:var(--amber)}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="nav-brand"><img src="assets/wordmark.webp" alt="Sweep" /></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="support.html">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </nav>
+
+  <article class="article">
+    <h1>FAQ &amp; Support</h1>
+    <div class="meta">We read every message. We usually reply within 1 to 2 days.</div>
+
+    <div class="intro">
+      Sweep is a small, independent app built by one grappler for the rest of us. Questions, bugs, ideas, or a roll you're proud of? We'd love to hear from you.
+    </div>
+
+    <div class="contact-card">
+      <a class="mail" href="mailto:hello@sweepbjj.app">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        hello@sweepbjj.app
+      </a>
+      <p>For support, feedback, or anything else. Reporting a bug? Please include your phone model and Android version so we can reproduce it.</p>
+    </div>
+
+    <h2 class="sec">Frequently asked</h2>
+
+    <details open>
+      <summary>What's free, and what's in Pro?</summary>
+      <div class="ans"><strong>Free</strong> covers the daily habit: logging your sessions and rolls, your Home screen, full history and search, the Insights overview, milestones, streaks and active days, goals, your techniques catalog with coach cues, your partners list, and your belt journey timeline.<br><br><strong>Sweep Pro</strong> opens the deep analysis: per-attempt logging across all five move kinds, the Game, Trends, Partners and Competition insight tabs, positional flow, tournaments, gameplans, working-log notes, partner rivalry breakdowns, the deep belt report, and CSV / JSON export with local backup.</div>
+    </details>
+
+    <details>
+      <summary>Is it a subscription?</summary>
+      <div class="ans">No. Sweep Pro is a single one-time purchase of <span class="tag">$12.99</span>. You pay once and it's yours. There is no subscription, ever.</div>
+    </details>
+
+    <details>
+      <summary>Do I need an account?</summary>
+      <div class="ans">No. There is no sign-up, no login, and no email required. You open the app and start logging. Nothing about you is sent anywhere.</div>
+    </details>
+
+    <details>
+      <summary>Where is my data stored?</summary>
+      <div class="ans">On your phone, in the app's local storage. It never touches a server, because Sweep doesn't have one. You can export everything to a JSON or CSV file anytime. See our <a href="privacy.html">Privacy Policy</a> for the full picture.</div>
+    </details>
+
+    <details>
+      <summary>How do I back up or move to a new phone?</summary>
+      <div class="ans">Because there's no cloud, your log lives on the device you created it on. With Pro you can export a full <strong>JSON backup</strong> from Settings and import it on a new phone. Your Pro unlock itself follows your Google account through Google Play, so a quick "restore purchase" brings it back on any device.</div>
+    </details>
+
+    <details>
+      <summary>Does it work for gi and no-gi?</summary>
+      <div class="ans">Both. Tag each session as gi or no-gi when you log it, and you can filter your insights by gi, no-gi, or all. The move library covers both, including leg locks and modern no-gi positions.</div>
+    </details>
+
+    <details>
+      <summary>Will there be an iPhone version?</summary>
+      <div class="ans">Sweep is built so an iPhone version is possible, and Android comes first. There's no date yet. If you want it on iPhone, write in and tell us. It helps us prioritize.</div>
+    </details>
+
+    <details>
+      <summary>How do I get a refund?</summary>
+      <div class="ans">Purchases go through Google Play, so refunds follow Google's process: open the Play Store, go to your order history, and request a refund within Google's window. If you hit any trouble, email us and we'll help.</div>
+    </details>
+
+    <details>
+      <summary>Is Sweep for kids?</summary>
+      <div class="ans">Sweep is built for teen and adult grapplers, ages 13 and up. It's a training log and analysis tool rather than a kids' app.</div>
+    </details>
+
+    <details>
+      <summary>Do I need to be online to use it?</summary>
+      <div class="ans">No. Once installed, Sweep runs fully offline. The only time it needs a connection is the one-time Pro purchase, which Google Play handles.</div>
+    </details>
+
+    <div class="callout">
+      <strong>About this project.</strong> Sweep is built independently by one grappler who wanted to actually see their own game. If it helps you train with a little more intention, that's the only review we hope for.
+    </div>
+  </article>
+
+  <footer>
+    <div class="foot-bottom">
+      <span class="tagline">Get on top of your game.</span>
+      <span>© 2026 Sweep · <a href="privacy.html">Privacy</a><a href="support.html">FAQ</a></span>
+    </div>
+  </footer>
+</body>
+</html>
