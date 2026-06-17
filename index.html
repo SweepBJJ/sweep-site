@@ -202,7 +202,7 @@
     .play-note{font-size:13.5px;color:var(--text-3)}
     .play-note b{color:var(--text-2);font-weight:600}
     /* email launch-list signup */
-    .signup{display:flex;gap:10px;flex-wrap:wrap;align-items:center;width:100%;max-width:470px;position:relative}
+    .signup{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:center;width:100%;max-width:470px;position:relative}
     .signup .field{flex:1 1 220px;display:flex}
     .signup input[type=email]{flex:1;width:100%;background:rgba(255,255,255,.04);border:1px solid var(--line-2);border-radius:14px;padding:16px 18px;color:var(--text);font-family:var(--font-body);font-size:16px;transition:border-color .25s,background .25s}
     .signup input[type=email]::placeholder{color:var(--text-3)}
@@ -406,6 +406,8 @@
     .cta-final .signup{margin:0 auto;justify-content:center}
     .cta-final .signup-msg{margin:16px auto 0;text-align:center}
     .ios-note{font-size:13px;color:var(--text-3);margin-top:14px}
+    /* .cta-final p (above) overrides .ios-note's margin, so scope the spacing here to win the cascade */
+    .cta-final .ios-note{margin-top:24px}
     /* maker story */
     .maker{font-size:clamp(18px,1.55vw,22px);color:var(--text-2);line-height:1.7;margin:0 auto}
     .maker-sign{font-family:var(--font-display);font-style:italic;color:var(--amber);font-size:20px;margin-top:18px}
@@ -633,8 +635,8 @@
       <h2 class="head reveal d1">Log fast. <span class="it">Tap, don't type.</span></h2>
       <p class="lead reveal d2">The moves are already in Sweep. A full session logs in under a minute, and the analysis builds itself from there.</p>
       <div class="steps">
-        <div class="step reveal d1"><div class="num">1</div><h4>Log the session</h4><p>Gi or no-gi, who you rolled, what you caught and what caught you. Hundreds of submissions, sweeps, passes, takedowns and escapes are built in.</p></div>
-        <div class="step reveal d2"><div class="num">2</div><h4>Sweep reads it back</h4><p>Your game mapped by position and belt, your finish rates, your rivalries, and the parts of your game that have gone quiet.</p></div>
+        <div class="step reveal d1"><div class="num">1</div><h4>Log the session</h4><p>Gi or no-gi, who you rolled, what you caught and what caught you. 180+ submissions, sweeps, passes, takedowns and escapes are built in.</p></div>
+        <div class="step reveal d2"><div class="num">2</div><h4>Sweep reads it back</h4><p>Your game mapped by position and belt, your finish rates, your rivalries, and the positions where you keep stalling.</p></div>
         <div class="step reveal d3"><div class="num">3</div><h4>Train with a plan</h4><p>Set the few things you're building, save the cues you'd forget, and watch them actually develop, round after round.</p></div>
       </div>
     </div>
@@ -657,7 +659,7 @@
       <div class="feat-grid">
         <div class="feat reveal d1"><span class="fic"><svg viewBox="0 0 24 24" stroke="var(--k-position)" fill="none" stroke-width="1.7"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span><div><h4>Mapped by position</h4><p>Mount and side control are where you score. Standing and leg entanglements are where you leak.</p></div></div>
         <div class="feat reveal d2"><span class="fic"><svg viewBox="0 0 24 24" stroke="var(--k-sub)" fill="none" stroke-width="1.7"><path d="M12 3v18M5 8l7-5 7 5M5 8v8l7 5 7-5V8"/></svg></span><div><h4>Drilled vs landing</h4><p>34 techniques drilled, 16 landing live. See which moves from class actually show up when you roll.</p></div></div>
-        <div class="feat reveal d3"><span class="fic"><svg viewBox="0 0 24 24" stroke="var(--bad)" fill="none" stroke-width="1.7"><path d="M3 17l5-5 4 3 6-7"/><path d="M14 8h5v5"/></svg></span><div><h4>Plateau flags</h4><p>Sweep flags the parts of your game that have gone quiet, so a plateau turns into a plan.</p></div></div>
+        <div class="feat reveal d3"><span class="fic"><svg viewBox="0 0 24 24" stroke="var(--bad)" fill="none" stroke-width="1.7"><path d="M3 17l5-5 4 3 6-7"/><path d="M14 8h5v5"/></svg></span><div><h4>Where you stall</h4><p>Sweep flags the positions where you keep trying to advance but land under half the time, so a plateau turns into a plan.</p></div></div>
         <div class="feat reveal d4"><span class="fic"><svg viewBox="0 0 24 24" stroke="var(--amber)" fill="none" stroke-width="1.7"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L8 21l4-2 4 2-1-7.5"/></svg></span><div><h4>Milestones</h4><p>From your first class to tapping a higher belt, Sweep marks the moments most logs miss.</p></div></div>
         <div class="feat reveal d1"><span class="fic"><svg viewBox="0 0 24 24" stroke="var(--k-escape)" fill="none" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span><div><h4>Mat time &amp; streaks</h4><p>Hours on the mat, active days, and the streak that keeps you honest about showing up.</p></div></div>
         <div class="feat reveal d2"><span class="fic"><svg viewBox="0 0 24 24" stroke="var(--k-pass)" fill="none" stroke-width="1.7"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span><div><h4>Gi &amp; no-gi</h4><p>Tag every session, then filter every stat by gi, no-gi, or all. Two games, tracked apart.</p></div></div>
@@ -719,7 +721,7 @@
       </div>
       <p class="reveal d2" style="font-size:17.5px;color:var(--text-2);max-width:64ch;margin:26px auto 0;line-height:1.6">Your rolls live on your phone and nowhere else. Nothing to sign into, nothing syncing to a server, and it all works with the wifi off.</p>
       <p class="reveal d2" style="font-size:17.5px;color:var(--text-2);max-width:62ch;margin:26px auto 0;line-height:1.6">Not a video library. Not a social network. Not an AI coach. Sweep is your private training log, and nothing else.</p>
-      <p class="price-note reveal d2">Every other serious BJJ app asks you to pay monthly. Sweep never will. Free to log, and a one-time <span class="tag">$12.99</span> Pro unlock opens the full analysis, competition tools, and gameplans. <b>Pay once, and the whole app is yours for good.</b></p>
+      <p class="price-note reveal d2">Most serious BJJ apps charge a monthly subscription. Sweep never will. Free to log, and a one-time <span class="tag">$12.99</span> Pro unlock opens the full analysis, competition tools, and gameplans. <b>Pay once, and the whole app is yours for good.</b></p>
     </div>
   </section>
 
