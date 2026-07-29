@@ -184,6 +184,13 @@
     .hero-sub{font-size:clamp(17.5px,1.4vw,21.5px);color:var(--text-2);max-width:586px;margin-bottom:40px;line-height:1.66}
     .hero-sub b{color:var(--text);font-weight:600}
     .hero-actions{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+    .hero-badges{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+    .hero-badge{display:inline-flex;transition:transform .3s var(--ease)}
+    .hero-badge img{height:56px;width:auto;display:block}
+    /* Google's badge artwork ships with ~16% clear-space padding baked in; size up + negative margin so its button optically matches Apple's 56px */
+    .hero-badge.play img{height:83px;margin:-14px}
+    .hero-badge:hover{transform:translateY(-2px)}
+    .hero-badge:focus-visible{outline:2px solid #fff;outline-offset:4px;border-radius:10px}
     .play-btn{
       position:relative;overflow:hidden;
       display:inline-flex;align-items:center;gap:13px;
@@ -403,6 +410,8 @@
     .cta-final h2 .accent{color:var(--amber);font-style:italic}
     .cta-final p{font-size:20px;color:var(--text-2);max-width:48ch;margin:0 auto 40px}
     .cta-final .play-btn{margin:0 auto}
+    .cta-final .hero-badges{justify-content:center}
+    .cta-final p b{color:var(--text);font-weight:600}
     .cta-final .signup{margin:0 auto;justify-content:center}
     .cta-final .signup-msg{margin:16px auto 0;text-align:center}
     .ios-note{font-size:13px;color:var(--text-3);margin-top:14px}
@@ -516,16 +525,10 @@
       <h1 class="hero-h rise r2">Get on top of <span class="accent">your game.</span></h1>
       <p class="hero-sub rise r3">Log your rolls in seconds. Sweep turns them into a rich analysis of your training, giving you the data you need to improve your game: your real finish rates, positional gaps, where you struggle, and how you're improving against training partners over time. <b>Pay once</b> and leave the expensive subscriptions behind. Your data never leaves your phone.</p>
       <div class="hero-actions rise r4">
-        <form class="signup" id="signup-hero">
-          <input type="hidden" name="access_key" value="7f4e884a-f4c0-4b99-b18c-04b619e5f3a8" />
-          <input type="hidden" name="subject" value="New Sweep launch-list signup" />
-          <input type="hidden" name="from_name" value="Sweep website" />
-          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
-          <span class="field"><input type="email" name="email" placeholder="you@email.com" required autocomplete="email" aria-label="Your email address" /></span>
-          <button type="submit">Notify me at launch</button>
-        </form>
-        <p class="signup-msg" data-for="signup-hero" role="status" aria-live="polite"></p>
-        <span class="coming-soon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3.5v17c0 .9.97 1.46 1.74.99l13.9-8.5a1.15 1.15 0 000-1.98L4.74 2.51A1.15 1.15 0 003 3.5z"/></svg><svg viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>Coming soon to Google Play and the App Store</span>
+        <div class="hero-badges">
+          <a class="hero-badge" href="https://apps.apple.com/app/id6785548631" aria-label="Download Sweep on the App Store"><img src="assets/appstore-badge.svg" alt="Download on the App Store" /></a>
+          <a class="hero-badge play" href="https://play.google.com/store/apps/details?id=com.sweepbjj.app" aria-label="Get Sweep on Google Play"><img src="assets/googleplay-badge.png" alt="Get it on Google Play" /></a>
+        </div>
         <span class="hero-price"><b>Free</b> to download and log. Unlock everything for <span class="tag">$12.99</span>, one time. No subscription, no account, and your rolls never leave your phone.</span>
       </div>
     </div>
@@ -737,17 +740,12 @@
   <!-- FINAL CTA -->
   <section class="cta-final">
     <h2 class="reveal">Get on top of <span class="accent">your game.</span></h2>
-    <p class="reveal d1">Sweep is coming soon to Google Play and the App Store. Drop your email and we'll send one message the day it goes live.</p>
-    <form class="signup reveal d2" id="signup-final">
-      <input type="hidden" name="access_key" value="7f4e884a-f4c0-4b99-b18c-04b619e5f3a8" />
-      <input type="hidden" name="subject" value="New Sweep launch-list signup" />
-      <input type="hidden" name="from_name" value="Sweep website" />
-      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
-      <span class="field"><input type="email" name="email" placeholder="you@email.com" required autocomplete="email" aria-label="Your email address" /></span>
-      <button type="submit">Notify me at launch</button>
-    </form>
-    <p class="signup-msg" data-for="signup-final" role="status" aria-live="polite"></p>
-    <p class="ios-note">iPhone or Android — one signup covers both. We'll tell you the day Sweep lands on your store.</p>
+    <p class="reveal d1">Sweep is out now on the App Store and Google Play. <b>Free</b> to download and log &mdash; unlock everything for $12.99, one time.</p>
+    <div class="hero-badges reveal d2">
+      <a class="hero-badge" href="https://apps.apple.com/app/id6785548631" aria-label="Download Sweep on the App Store"><img src="assets/appstore-badge.svg" alt="Download on the App Store" /></a>
+      <a class="hero-badge play" href="https://play.google.com/store/apps/details?id=com.sweepbjj.app" aria-label="Get Sweep on Google Play"><img src="assets/googleplay-badge.png" alt="Get it on Google Play" /></a>
+    </div>
+    <p class="ios-note">iPhone or Android &mdash; no subscription, no account, and your rolls never leave your phone.</p>
   </section>
 
   <!-- FOOTER -->
