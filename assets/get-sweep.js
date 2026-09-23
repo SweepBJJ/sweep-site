@@ -22,7 +22,7 @@
   // App Store Connect "provider token" for campaign links (a short number from App Store
   // Connect's campaign link generator). While it's empty, App Store links stay plain: they
   // still work, just without per-campaign install counts in App Analytics.
-  var APPLE_PT = '';
+  var APPLE_PT = '129101118'; // from App Store Connect's campaign link generator, 2026-09-23
 
   var html = document.documentElement;
   var ua = navigator.userAgent || '';
