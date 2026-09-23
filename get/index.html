@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" data-autoredirect data-channel="get">
+<head>
+  <!-- Smart link (2026-09-23): sweepbjj.app/get sends iPhones to the App Store and Android
+       phones to Google Play (with source tags), and shows a QR code + both badges on a
+       computer. Use it on posters, flyers, podcast reads and the site's QR codes, e.g.
+       sweepbjj.app/get?src=gym-poster or sweepbjj.app/get?src=careerjitsu -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0F1F40" />
+  <title>Get Sweep | BJJ training log</title>
+  <meta name="description" content="Get Sweep, the BJJ training log. Free on iPhone and Android. Pay once, no subscription." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/png" href="/assets/icon-180.png" />
+  <link rel="apple-touch-icon" href="/assets/icon-180.png" />
+  <!-- Phones leave for their store here, before anything is drawn. -->
+  <script src="/assets/get-sweep.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/site.css" />
+  <style>
+    .get-page{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center}
+    .get-page .get-logo img{height:46px;width:auto;margin-bottom:34px}
+    .get-page .more{margin-top:26px;font-size:15px}
+    .get-page .more a{color:var(--text-2);text-decoration:underline;text-underline-offset:3px}
+  </style>
+</head>
+<body>
+  <section class="cta-final get-page">
+    <a class="get-logo" href="/"><img src="/assets/wordmark.webp" alt="Sweep" /></a>
+    <h2>Get Sweep on <span class="accent">your phone.</span></h2>
+    <p><b>Free</b> to download and log. Unlock everything for $12.99, one time.</p>
+    <div class="hero-badges">
+      <a class="hero-badge" href="https://apps.apple.com/app/id6785548631" aria-label="Download Sweep on the App Store"><img src="/assets/appstore-badge.svg" alt="Download on the App Store" /></a>
+      <a class="hero-badge play" href="https://play.google.com/store/apps/details?id=com.sweepbjj.app" aria-label="Get Sweep on Google Play"><img src="/assets/googleplay-badge.png" alt="Get it on Google Play" /></a>
+    </div>
+    <div class="qr-get"><img src="/assets/qr-get.svg" alt="QR code: get Sweep on your phone" width="92" height="92" /><span>On a computer? Scan with your phone's camera to get Sweep.</span></div>
+    <p class="more"><a href="/">What is Sweep?</a></p>
+  </section>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5495ddd1bbbd4c4cb0503af6c79ea02e"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

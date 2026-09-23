@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en" data-channel="finish">
+<head>
+  <!-- Ad landing page (2026-09-23). Short on purpose: it repeats the Reddit ad's question
+       ("Which subs do you actually finish?"), shows that exact screen first, and keeps the
+       download button in reach. Styles: /assets/site.css. Store routing, source tags and
+       the sticky bar: /assets/get-sweep.js. Point ads here with UTM tags, e.g.
+       https://sweepbjj.app/finish?utm_source=reddit&utm_medium=paid&utm_campaign=finish_v1 -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0F1F40" />
+  <title>Which subs do you actually finish? | Sweep BJJ training log</title>
+  <meta name="description" content="Tap in your rolls after class. Sweep shows your real finish rate for every submission, where you stall, and who's catching you. Pay once, no subscription." />
+  <meta name="robots" content="noindex" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Which subs do you actually finish?" />
+  <meta property="og:description" content="Sweep shows your real finish rate for every submission, where you stall, and who's catching you. Pay once, no subscription." />
+  <meta property="og:image" content="https://sweepbjj.app/assets/og-image.png" />
+  <meta property="og:url" content="https://sweepbjj.app/finish/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="/assets/icon-180.png" />
+  <link rel="apple-touch-icon" href="/assets/icon-180.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/site.css" />
+  <script src="/assets/get-sweep.js"></script>
+  <style>
+    /* The question is longer than the homepage tagline, so the headline runs a little smaller. */
+    .lp h1.hero-h{font-size:clamp(42px,6.2vw,92px)}
+    .lp .price-note{margin-top:30px}
+  </style>
+</head>
+<body class="lp">
+
+  <nav class="nav" id="nav">
+    <a href="/" class="nav-brand"><img src="/assets/wordmark.webp" alt="Sweep" /></a>
+    <div class="nav-links">
+      <a href="#get" class="nav-cta" data-get-sweep>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3.5v17c0 .9.97 1.46 1.74.99l13.9-8.5a1.15 1.15 0 000-1.98L4.74 2.51A1.15 1.15 0 003 3.5z"/></svg>
+        <span>Get Sweep</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- 1. The ad's question, answered with the screen that answers it -->
+  <header class="hero">
+    <div class="hero-copy">
+      <div class="hero-brand"><span class="hero-name">Sweep</span><span class="hero-cat"><span class="dot"></span>BJJ Training Log</span></div>
+      <h1 class="hero-h">Which subs do you actually <span class="accent">finish?</span></h1>
+      <p class="hero-sub">Tap in your rolls after class. Sweep shows your real finish rate for every submission, the positions where you stall, and the training partners catching you.</p>
+      <div class="hero-actions" data-hero-cta>
+        <div class="hero-badges">
+          <a class="hero-badge" href="https://apps.apple.com/app/id6785548631" aria-label="Download Sweep on the App Store"><img src="/assets/appstore-badge.svg" alt="Download on the App Store" /></a>
+          <a class="hero-badge play" href="https://play.google.com/store/apps/details?id=com.sweepbjj.app" aria-label="Get Sweep on Google Play"><img src="/assets/googleplay-badge.png" alt="Get it on Google Play" /></a>
+        </div>
+        <a class="also-on to-android" href="https://play.google.com/store/apps/details?id=com.sweepbjj.app">Also on Android</a>
+        <a class="also-on to-ios" href="https://apps.apple.com/app/id6785548631">Also on iPhone</a>
+        <div class="qr-get"><img src="/assets/qr-get.svg" alt="QR code: get Sweep on your phone" width="92" height="92" /><span>On a computer? Scan with your phone's camera to get Sweep.</span></div>
+        <span class="hero-price"><b>Free</b> to download and log. Unlock everything for <span class="tag">$12.99</span>, one time. No subscription, no account, and your rolls never leave your phone.</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="device-wrap">
+        <div class="device">
+          <div class="scrn"><img src="/assets/shot_game_subs.webp" alt="Sweep Insights: each submission's real finish rate, landed versus attempts (cross collar choke 4 of 4, armbar 10 of 14, kimura 3 of 4), and the submissions that catch me most" /></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Two more reads -->
+  <section class="band">
+    <div class="wrap split">
+      <div class="split-copy">
+        <div class="kicker">Partner rivalries</div>
+        <h3 class="rh">Know exactly who's <span class="it">catching you.</span></h3>
+        <p class="lead">Every roll with a training partner adds up. See who you're gaining on, who keeps catching you, and the exact techniques you trade.</p>
+      </div>
+      <div class="split-visual"><div class="device-wrap"><div class="device"><div class="scrn"><img src="/assets/shot_partner_detail.webp" alt="Sweep partner profile for Marco: rolls together, submissions landed each way, and the standout patterns between you" loading="lazy" /></div></div></div></div>
+    </div>
+    <div class="wrap split flip" style="margin-top:clamp(48px,6.5vw,96px)">
+      <div class="split-visual"><div class="device-wrap"><div class="device"><div class="scrn"><img src="/assets/shot_belts.webp" alt="Sweep Belt journey: every belt with its own record of rolls, mat time and finish rates" loading="lazy" /></div></div></div></div>
+      <div class="split-copy">
+        <div class="kicker">Belt journey</div>
+        <h3 class="rh">Every belt, <span class="it">every milestone.</span></h3>
+        <p class="lead">From your first class to the day you tap someone a belt above you, Sweep keeps a record at every rank.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Who built it, and the deal -->
+  <section class="band band-deep">
+    <div class="wrap" style="max-width:760px;text-align:center">
+      <div class="kicker">Why I built Sweep</div>
+      <p class="maker">I'm a solo developer, and I've trained for four years. During countless drives home after practice I couldn't shake the feeling that I had no idea if I was actually improving; I couldn't really tell if what I was learning was sticking. Sweep is the tool I wanted. I built it so new and seasoned grapplers alike can stop guessing, make their mat time mean more, and find a clearer path towards their personal goals.</p>
+      <p class="maker-sign">Trevor</p>
+      <p class="price-note">No account. No cloud. No AI. <b>Pay once, <span class="tag">$12.99</span>, and it's yours.</b></p>
+    </div>
+  </section>
+
+  <!-- 4. Download -->
+  <section class="cta-final" id="get" data-final-cta>
+    <h2>Get on top of <span class="accent">your game.</span></h2>
+    <p><b>Free</b> to download and log. Unlock everything for $12.99, one time.</p>
+    <div class="hero-badges">
+      <a class="hero-badge" href="https://apps.apple.com/app/id6785548631" aria-label="Download Sweep on the App Store"><img src="/assets/appstore-badge.svg" alt="Download on the App Store" /></a>
+      <a class="hero-badge play" href="https://play.google.com/store/apps/details?id=com.sweepbjj.app" aria-label="Get Sweep on Google Play"><img src="/assets/googleplay-badge.png" alt="Get it on Google Play" /></a>
+    </div>
+    <a class="also-on to-android" href="https://play.google.com/store/apps/details?id=com.sweepbjj.app">Also on Android</a>
+    <a class="also-on to-ios" href="https://apps.apple.com/app/id6785548631">Also on iPhone</a>
+    <div class="qr-get"><img src="/assets/qr-get.svg" alt="QR code: get Sweep on your phone" width="92" height="92" /><span>On a computer? Scan with your phone's camera to get Sweep.</span></div>
+    <p class="ios-note">iPhone or Android. No subscription, no account, and your rolls never leave your phone.</p>
+  </section>
+
+  <footer>
+    <div class="foot-bottom">
+      <span class="tagline"><a href="/">sweepbjj.app</a></span>
+      <span><a href="/support.html">FAQ</a> · <a href="/privacy.html">Privacy</a> · <a href="mailto:hello@sweepbjj.app">hello@sweepbjj.app</a></span>
+    </div>
+  </footer>
+
+  <script>
+    // nav scrolled state (same as the homepage)
+    (function () {
+      var nav = document.getElementById('nav');
+      function onScroll() { nav.classList.toggle('scrolled', window.scrollY > 30); }
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+    })();
+  </script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5495ddd1bbbd4c4cb0503af6c79ea02e"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
